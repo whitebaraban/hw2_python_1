@@ -76,6 +76,11 @@ print()
 lst = [1, 2, 4, 5, 6, 2, 5, 2]
 print(f'A fourth task, part a: { set(lst) }')
 
-# ЧАСТЬ б не успел сделать до 16:00
-# я сдам после 16:00 до занятий,
-# попрошу техподдержку приложить к сданной работе
+lst2 = [1, 2, 4, 5, 6, 2, 5, 2]
+new_lst2 = []
+
+for i in range(0, len(lst2)):
+    if lst2.count(lst2[i]) == 1:
+        new_lst2.append(lst2[i])
+
+print(f'A fourth task, part a: { new_lst2 }')
